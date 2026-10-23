@@ -1,0 +1,31 @@
+[project]
+name = "llm-observability-demos"
+version = "0.1.0"
+description = "Demos progresivas de aplicaciones LLM y observabilidad con Langfuse"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "langchain>=1.0.0",
+    "langchain-chroma>=1.0.0",
+    "langchain-huggingface>=1.0.0",
+    "langchain-openrouter>=0.2.9",
+    "langchain-text-splitters>=1.0.0",
+    "langfuse>=5.0.0",
+    "pypdf>=6.0.0",
+    "python-dotenv>=1.1.0",
+    "reportlab>=4.0.0",
+    "sentence-transformers>=5.0.0",
+    "tavily-python>=0.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
